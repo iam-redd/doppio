@@ -1,0 +1,116 @@
+.about-section {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.title_line {
+    width: 100px;
+    height: 5px;
+    background-color: #A7897E;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title_h1 {
+    display: flex;
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+}
+
+.title_h2 {
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+    height: auto;
+    display: block;
+}
+
+.title_sub {
+    width: 71%;
+    text-align: justify;
+}
+
+.title_sub-sub {
+    width: 100%;
+    text-align: justify;
+}
+
+.about-text {
+    margin-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-img {
+    width: 420px;
+    height: auto;
+    border-radius: 0 50px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    background: url(/img/desktop/background/coffeine.png) left /cover no-repeat;
+    background-size: 100%;
+}
+
+.personal-title {
+    margin-top: 100px;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+}
+
+.personal-cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.personal-card {
+    width: 20%;
+    height: auto;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+    justify-content: space-around;
+    box-shadow: 0px 0px 18px 0px rgb(0 0 0 / 10%);
+    transition: all 0.3s ease;
+    padding: 10px;
+}
+
+.personal-card:hover {
+    background-color: #DED0C3;
+    color: #fff;
+}
+
+.personal-card__name {
+    font-size: 15px;
+}
+
+.personal-card__title {
+    color: #A7897E;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.personal-card__sub {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.personal-card__img img {
+    width: 150px;
+    height: 150px;
+}

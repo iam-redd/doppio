@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DOPPIO | Твой маленький кофейный мир</title>
+
+
+    <!--//Cтили в СSS-->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/history-style.css">
+    <link rel="stylesheet" href="../css/about-style.css">
+
+    <!--//Шрифты Oswald 300, 400,600,700 и Pacifico 400-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Viaoda+Libre&display=swap" rel="stylesheet">
+
+    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,300;1,400;1,500&family=Pacifico&display=swap" rel="stylesheet">
+    -->
+</head>
+
+<body>
+    <!--Начало шапки-->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="navigation">
+                <!--//Логотип-->
+                <a href="../index.html" title="Logo pic">
+                    <svg class="logo__pic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 94.8">
+                        <title>Doppio</title>
+                        <path d="M1162.9,143a51.5,51.5,0,0,0-7.5-16.7,48.5,48.5,0,0,0-17-15.4,50.8,50.8,0,0,0-24-6.1,38.2,38.2,0,0,0-11.5,1.4c.3.3.5.4.6.6,6,5.4,8.8,11.9,7.1,20a3.2,3.2,0,0,1-.9,2.1c-.3.2-.9.3-2.3-.4a10,10,0,0,1-4.1-3.8,23.3,23.3,0,0,1-2.8-5.9,32.3,32.3,0,0,0-5.7-9.6h-.6a2.6,2.6,0,0,0-1.1.2,1.7,1.7,0,0,0-1,.8c.6.9,1.5,2.3,2.7,3.9,2.2,3.1,2.3,2.9,3.4,4.6l3.5,5.5.9,1.3c.9,1.3,1.8,2.8,2.8,4.1s.4,1.1-.5,1.2c-4.5.8-9,.8-13.2-1.5a20.7,20.7,0,0,1-3.7-2.7c-2.5-2.2-5-6.7-5.6-7.7s-.7-1.1-1-1.2c-2.3-.8-6.5,6.1-8,8.5a67.9,67.9,0,0,0-7.6,17.9s-2.7,11.4-1,14.9c.1.2.4.8.6.8s.4-.4.4-.7a8.2,8.2,0,0,1,.6-2.7c0-.2.1-.3.2-.5,2.7-9,7.7-16.3,16.1-20.9a19.8,19.8,0,0,1,12.4-2.1c.6.1,1.4.1,1.4,1.1.1,6.7-.6,13.1-5,18.6a106.6,106.6,0,0,1-10.7,11.6c-6.2,5.8-7.9,10-8.1,14.4,0,0-.7,13.4,20.6,21h.4v-.4a15.4,15.4,0,0,1-1.7-12.2c.2-.5.3-.9.9-.8a6.2,6.2,0,0,0,1.5,1.9l.7.5c-.1-.1-.1-.3-.2-.5s-1.2-3.8-.5-6.1a9.5,9.5,0,0,1,.9-1.9,34.7,34.7,0,0,1,2.9-4.3l-6.6,6s-2.2,2.6-10.9,3.6c-.9.1-1.5,0-1.6-1.1-.3-5.8.2-11.4,4.1-16.2,2.6-3.2,5.1-6.6,7.5-10s4.3-5.4,5.5-8.7a31.3,31.3,0,0,0,2.2-12.1,9,9,0,0,1,.2-2.8c4.7,4,7.5,8.8,8,14.7a37,37,0,0,1-1.8,15,44.1,44.1,0,0,1-6.6,11.6l-2.3,2.6v.2l-.5,1.5a10.5,10.5,0,0,1,2.7-1.7,9.3,9.3,0,0,1,1.9-.6c12.2-2.6,18.2-2.3,18.2-2.3,3.8.1,11.8.7,18.9,5,2,1.2,4.7,3.1,5.9,6.4s1.1,6.3,0,6.8h-.2a2.2,2.2,0,0,0,1.4.3,3.4,3.4,0,0,0,1-.4,48,48,0,0,0,18.5-31.7A48.8,48.8,0,0,0,1162.9,143Zm-31.5.9c-.3,4.3-.3,4.7-.4,5.2-.3,3.2-.5,3.8-1,8.3s-.8,6.9-.8,8.2-.2,3.3-.1,5,.2,2.5-.4,2.9-1.9-.2-2.6-.6c-3.7-2.1-5.5-3.2-7.4-5.3s-4.4-6.8-6.1-11.1a47.1,47.1,0,0,1-2.1-7.2,39.2,39.2,0,0,1-.8-7.6,50.3,50.3,0,0,1,.4-7.8c.2-1.3.4-2.6.7-3.8a27.9,27.9,0,0,1,1.2-3.5,69.8,69.8,0,0,1,3.3-6.7,25.6,25.6,0,0,1,2.9-3.8c1.4-1.4,2.3-1.9,3.1-1.7s.3.1,1,.5l2.3,1.6a17.3,17.3,0,0,1,5.4,6.9,18.2,18.2,0,0,1,.7,3.2,57.8,57.8,0,0,1,1.2,6.6C1132.1,134.4,1132.1,135,1131.4,143.9Zm19.4,8a32.9,32.9,0,0,1-3.7,10.1,35.1,35.1,0,0,1-7.6,9,8.9,8.9,0,0,1-5,2.2,3.7,3.7,0,0,1-1.9-.2c-2-1.1-1.4-6.5.2-15.3,1.8-10.4,2.2-10.5,2.8-15.6s.8-10-.5-15.1a33.1,33.1,0,0,0-2.2-5.7,16.6,16.6,0,0,0-3.2-4.9c-1.2-1.1-2.1-1.7-2-2.1s2-.3,3.1-.2a17,17,0,0,1,5.1,1.6l.8.5c5.1,2.8,9.7,10,12,16.7a46.9,46.9,0,0,1,1.9,7.4A35.7,35.7,0,0,1,1150.8,151.9Z" transform="translate(-1064.2 -104.8)"/><path d="M1143.9,193.8l1.2-.3c-1.7,1.7-3.8,2.7-5.7,4a1.5,1.5,0,0,1-1.6,0c-5.1-2.2-10.5-2.8-15.9-2.9-11-.3-11.6.4-17.9-1.7a30.1,30.1,0,0,1-9.6-4.9,26.4,26.4,0,0,0-.2-2.8,11.5,11.5,0,0,0,2.7,2.9,15,15,0,0,0,5.8,2.9c4.6,1.3,9.3,1.4,14.3,1.3,2.6-.1,6.1-.6,13.1-.5a32,32,0,0,1,12,1.6h.2a1.7,1.7,0,0,0,1.2,0c1.1-.6.3-4,.2-4S1143.6,190.6,1143.9,193.8Z" transform="translate(-1064.2 -104.8)"/>
+                    </svg>
+                    <!--<img src="../img/Desktop/logo/coff-big.png" alt="header logo doppio" class="logo__pic">-->
+                </a>
+                <!--//Меню сайта-->
+                <ul class="navigation__list">
+                    <li><a href="#section__two">Новости сайта</a></li>
+                    <li><a href="../pages/blog.html">Блог</a></li>
+                    <li><a href="#" id="contacts">Контакты</a></li>
+                    <li><a href="../about.html">О нас</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="container">
+        <div class="about-section">
+            <div class="title_line"></div>
+            <div class="title">
+                <h1 class="title_h1">Кто мы?</h1>
+                <p class="title_sub">
+                    Мы команда из разных стран и профессий. Нас объеденяет одно - творчество.
+                    <br> Все мы очень любим кофе и одержимы ею. Наша цель - развитие кофейной индустрии в Узбекистане. Делимся разными информациями которые помогут сварить вкусную чашечку дома и не нужно для этого иметь кофемашинку за 1000$ и более.
+                </p>
+            </div>
+
+
+            <div class="about-container">
+                <img class="about-img" src="../img/desktop/slider/najib-kalil-ys0rBJK-k6Q-unsplash.jpg" alt="">
+                <div class="about-text">
+                    <h2 class="title_h2">В первую очередь</h2>
+                    <p class="title_sub-sub">
+                        Мы команда из разных стран и профессий. Нас объеденяет одно - творчество.
+                        <br> Все мы очень любим кофе и одержимы ею. Наша цель - развитие кофейной индустрии в Узбекистане. Делимся разными информациями которые помогут сварить вкусную чашечку дома и не нужно для этого иметь кофемашинку за 1000$ и более.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="personal-title">
+            <h2>Наша команда</h2>
+        </div>
+
+
+        <div class="personal-cards">
+            <div class="personal-card">
+                <div class="personal-card__img">
+                    <img src="../img/desktop/personal/2.png" alt="">
+
+                </div>
+
+                <div class="personal-card__name">
+                    <h2>Жавохир Ахмедов</h2>
+
+                </div>
+                <div class="personal-card__title">
+                    Основатель / Веб-разработчик / Бариста
+
+
+                </div>
+                <div class="personal-card__sub">
+                    25 лет, Ташкент
+
+                </div>
+
+            </div>
+
+            <div class="personal-card">
+                <div class="personal-card__img">
+                    <img src="../img/desktop/personal/1.png" alt="">
+
+                </div>
+                <div class="personal-card__name">
+                    <h2>Рустамов Руслан</h2>
+                </div>
+                <div class="personal-card__title">
+                    Сооснователь / Дизайнер / Бариста
+
+
+                </div>
+                <div class="personal-card__sub">
+                    26 лет, Москва
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <section id="section__three" class="section__three">
+        <div class="container">
+            <div class="display__flex">
+                <div class="container__inner">
+                    <h3 class="low--title">Важно знать!</h3>
+                    <p class="low-text">
+                        Сайт находится на ранней стадии разработки. Здесь вы найдете все, что связано с кофе. Если не нашли, то в скором времени это появится, т.к. информации очень много, а над сайтом работает пока что один человек. С каждым днем контент будет дополняться. Пока
+                        что можете присоединиться на наши группы в соц. сетях для беседы.
+                    </p>
+                </div>
+
+
+                <div class="socials">
+                    <div class="socials_icons">
+                        <a href="#" title="Instagram" class="socials-icon social-icon-1">
+
+                        </a>
+                        <a href="#" title="Telegram" class="socials-icon social-icon-2">
+
+                        </a>
+                        <a href="#" title="You Tube" class="socials-icon social-icon-3">
+
+                        </a>
+                        <a href="#" title="Discord" class="socials-icon social-icon-4">
+
+                        </a>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <footer id="footer" class="footer">
+        <div class="footer-credits">
+            <p class="credits">
+                Copyright © 2022 Coffee Snob. <br>Все материалы на сайте взяты с открытых источников. <br>Если вы нашли нарушение авторских прав, сообщите <a href="#contacts">нам</a> .
+            </p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

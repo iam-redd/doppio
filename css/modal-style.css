@@ -1,0 +1,99 @@
+body.lock {
+    overflow: hidden;
+}
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.92);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
+}
+
+.popup__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+.popup__content {
+    background-color: #fff;
+    color: #000;
+    max-width: 800px;
+    padding: 50px;
+    position: relative;
+    opacity: 0;
+    border-radius: 50px;
+    transition: all 0.8s ease 0s;
+    transform: perspective(600px) translate(0px, -100%) rotate(85deg);
+}
+
+.popup__close svg {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: -10px;
+    top: -10px;
+    fill: #fff;
+}
+
+.popup__close svg:hover {
+    fill: #DED0C3;
+    transform: rotate(180deg);
+    transition: all 0.3s ease 0s;
+}
+
+.only-text {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.popup__title {
+    align-items: center;
+    text-align: center;
+    font-size: 32px;
+    line-height: normal;
+    letter-spacing: normal;
+    margin: 0px 0px 0.2em 0px;
+    padding: 0;
+}
+
+.popup__text {
+    font-size: 15px;
+}
+
+.popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup:target .popup__content {
+    transform: perspective(600px) translate(0px, 0px) rotate(0deg);
+    opacity: 1;
+}
+
+.popup-img {
+    display: flex;
+    width: 100%;
+    height: 15px;
+    background: url(/img/desktop/slider/alin-luna-lGl3spVIU0g-unsplash.jpg) center center /cover no-repeat;
+}
+
+.modal-card-img {
+    width: 200px;
+    height: 200px;
+}
+
+.legends {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
