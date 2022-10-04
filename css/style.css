@@ -14,17 +14,18 @@
     
     a {
         text-decoration: none;
-        color: black
+        color: #121212;
     }
     
     html,
     body {
         height: 100%;
+        background:url(../img/desktop/slider/bckg.png);
     }
     
     body {
-        font-family: 'Gentium Plus', Roboto, sans-serif;
-        color: #1c1c1c;
+        font-family: 'Roboto Mono', sans-serif;
+        color: #121212;
     }
     
     div,
@@ -45,7 +46,7 @@
     h4,
     h5,
     h6 {
-        font-family: 'Viaoda Libre', Oswald, sans-serif;
+        font-family: 'Comfortaa', sans-serif;;
         letter-spacing: 0.05em;
     }
     
@@ -58,6 +59,12 @@
     .container {
         max-width: 1170px;
         margin: 50px auto 0px auto;
+    }
+    .wrapper{
+        border-radius:20px;
+        padding: 20px 20px 100px 20px;
+        background: #f5f5f5;
+
     }
     
     .margin {
@@ -72,22 +79,23 @@
         text-align: center;
         margin-bottom: 50px;
     }
-    
+    .logo__text{
+        display: flex;
+        align-items:center;
+        font-size: large;
+        font-family: 'Comfortaa', sans-serif;
+
+    }
+    .logo__text span{
+        color:#F05454;
+    }
     .logo__pic {
-        width: 10vh;
-        height: 10vh;
-    }
-    
-    .logo__pic svg {
-        fill: #000;
-    }
-    
-    .logo__pic:hover {
-        fill: #A7897E;
+        margin-right: 1vw;
+        width: 5vh;
+        height: 5vh;
     }
     
     .header {
-        background: url(/img/desktop/background/flavor-wheel-rgb.svg) right top /cover no-repeat;
         display: block;
         justify-content: space-between;
         align-items: center;
@@ -101,21 +109,20 @@
     }
     
     .header li {
-        margin-left: 15px;
+        margin-right: 2vw;
         transition: all 0.3s ease;
     }
     
     .header li:hover {
-        color: #A7897E;
+        color: #F05454;
         margin-top: -3px;
     }
     
-    .header a:hover {
-        color: #A7897E
+    .navigation__list a:hover{
+        color:#F05454;
     }
     
     .title {
-        font-family: 'Gentium Plus', Roboto, sans-serif;
         color: #1c1c1c;
     }
     
@@ -126,24 +133,46 @@
         flex-wrap: wrap;
         margin-bottom: 50px;
     }
-    
-    .slide {
-        display: none;
-    }
-    
-    .slide.active {
+
+    .slider__items{
+        position: relative;
         display: flex;
+        overflow: hidden;
+        width: 400px;
+        height: 300px;        
+    }    
+    .slide {
+        position: absolute;
+        min-width: 400px;
+        height: 300px;
+        border-radius: 30px 0 30px 0;
+        transition: all 1.0s ease-in-out;
+        overflow: hidden;
+        opacity: 0;    
     }
-    
-    .slide.active img {
-        max-width: 420px;
+    .slide.active{
+        opacity: 1;
+    }
+    .sort-1{
         width: 100%;
-        height: 350px;
-        border-radius: 0px 50px 0px 50px;
-        transition: all 0.1s ease;
-        box-shadow: 10px 10px 44px -10px rgba(0, 0, 0, 0.75);
+        height: 100%;
+        background: url(../img/desktop/slider/najib-kalil-ys0rBJK-k6Q-unsplash.jpg) center center/cover no-repeat;
     }
-    
+    .sort-2{
+        width: 100%;
+        height: 100%;
+        background: url(../img/desktop/slider/ashkan-forouzani-QZTFDvO8Nh8-unsplash.jpg) center center/cover no-repeat;
+    }
+    .sort-3{
+        width: 100%;
+        height: 100%;
+        background: url(../img/desktop/slider/kofe_kofejnik_kofejnia_126219_3840x2400.jpg) center center/cover no-repeat;
+    }
+    .sort-4{
+        width: 100%;
+        height: 100%;
+        background: url(../img/desktop/slider/thom-holmes-HAOeV9vlAqo-unsplash.jpg) center center/cover no-repeat;
+    }        
     .offer__title {
         font-size: 35px;
         display: flex;
@@ -152,12 +181,13 @@
     }
     
     .offer__sub {
-        line-height: 1;
+        line-height: 1.2;
         font-size: 18px;
         margin-top: 20px;
-        padding: 0 5px;
-        width: 730px;
-        border-left: 5px solid #1c1c1c;
+        margin-left: 2vw;
+        padding: 0 10px;
+        max-width: 43vw;
+        border-left: 3px solid #F05454;
     }
     /*Конец шапки*/
     /*Начало первой секции*/
@@ -194,24 +224,27 @@
         width: 100%;
         height: 100%;
     }
+    catalog h5{
+        color:#30475E;
+    }
     
     .catalog:hover {
-        background-color: #DED0C3;
-        color: #fff;
-        margin-top: -10px;
+        background-color: #F05454;
+        color: #f5f5f5;
+        transform: translateY(-10px);
         box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 27%);
     }
     
     .catalog:hover svg {
-        fill: #fff;
+        fill: #f5f5f5;
     }
     
     .catalog-1 svg {
-        stroke: #000;
+        stroke: #30475E;
     }
     
     .catalog-1:hover svg {
-        stroke: #fff;
+        stroke: #f5f5f5;
     }
     /*Icons for catalog*/
     
@@ -227,48 +260,38 @@
     }
     
     .icon svg {
-        fill: #000;
+        fill: #30475E;
     }
     /*Конец первой секции*/
     /*Начало второй секции*/
     
     .cards {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     
     .card {
-        box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 4%);
+        box-shadow: 0px 0px 25px 0px rgb(0 0 0 / 10%);
         border-radius: 15px;
-        padding: 15px;
-        width: 280px;
+        /*border: 1px solid #30475E;*/
+        padding: 10px;
+        width: 250px;
+        transition: 0.2s ease-in-out;
     }
     
     .card:hover {
-        background: #DED0C3;
-        color: #fff;
+        background: #f1f1f1;
         box-shadow: 0px 0px 25px 0px rgb(0 0 0 / 27%);
-        fill: #fff
+        transform: translateY(-5px);
     }
     
-    .card a:hover {
-        margin-top: 5px;
-        color: #fff;
-        border: 1px solid #fff;
-    }
+    
     
     .card img {
         border-radius: 10px;
         width: 100%;
     }
-    
-    .card a {
-        color: #756355;
-        border-radius: 8px;
-        font-size: 14px;
-        padding: 5px;
-        transition: 0.2s ease-out;
-    }
+        
     
     .card-h {
         margin: 10px 0;
@@ -278,7 +301,7 @@
     
     .card-p {
         text-align: left;
-        color: rgb(67, 67, 67);
+        color: #121212;
         padding: 0;
         line-height: 1;
         font-size: 16px;
@@ -287,6 +310,7 @@
     .date {
         display: flex;
         justify-content: space-between;
+        color:#30475E;
     }
     
     .publish-date svg,
@@ -312,14 +336,15 @@
         flex-direction: column;
         justify-content: space-between;
     }
-    
-    .href-small {
-        margin-top: 10px;
-        display: flex;
-        justify-content: space-between;
-        flex: 55px;
-        align-items: flex-end;
+
+    .href-podskazka{
+        font-size: x-small;
+        color:#748597;
+        margin: 20px 0;
+        text-align: center;
+        opacity: 0.7;
     }
+    
     /*Начало третьей секции*/
     
     .display__flex {
@@ -339,15 +364,16 @@
         width: 250px;
         border-radius: 20px 20px 0px 20px;
         margin-top: 15px;
-        border: 1px solid black;
+        border: 1px solid #30475E;
         /*background-color: #DED0C3;*/
         background: url(/img/desktop/icons/icons-bck.svg) center center /cover no-repeat;
     }
     
     .low-text {
-        color: #A7897E;
-        line-height: 1;
+        color: #30475E;
+        line-height: 1.15;
         font-size: 16px;
+        padding-right: 20px;
     }
     
     .socials_icons {
@@ -385,7 +411,6 @@
     /*Начало подвала секции*/
     
     .footer {
-        margin-top: 100px;
         display: flex;
         background-color: #1c1c1c;
     }
