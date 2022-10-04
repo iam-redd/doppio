@@ -21,6 +21,10 @@
     body {
         height: 100%;
         background:url(../img/desktop/slider/bckg.png);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
     
     body {
