@@ -417,26 +417,30 @@
     
     .footer {
         display: flex;
-        background-color: #1c1c1c;
+        background-color: #121212;
     }
     
     .footer-credits {
-        margin: 30px auto;
-        text-align: center;
+        width: 100vw;
         align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 30px auto;
     }
     
     .credits {
-        font-size: 14px;
-        color: #fff;
+        font-size: 12px;
+        color: #f5f5f5;
+        font-weight: 300;
     }
     
     .credits a {
-        color: #A7897E;
+        color: #F05454;
     }
     
     .credits a:hover {
-        color: #fff;
+        color: #f5f5f5;
     }
     /*Конец подвала секции*/
     

@@ -1,12 +1,12 @@
 .history-section {
     width: 100%;
     height: auto;
-    display: block;
+    display: flex;
 }
 
 .history-container {
     display: flex;
-    margin-top: 100px;
+    margin-top: 5vh;
 }
 
 .history-text {
@@ -14,36 +14,40 @@
     text-align: center;
     width: 100%;
 }
-
-.history-cards {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 50px;
-}
-
-.history-card {
-    width: 230px;
-    height: 250px;
-    border: 1px solid black;
-    text-align: center;
-    align-items: center;
-    padding: 10px;
-    border-radius: 20px;
-}
-
-.history-card img {
-    width: 200px;
-    height: 170px;
-    border-radius: 15px;
-}
-
 .classes {
     height: 100px;
 }
 
-.history-card:hover {
-    background-color: #DED0C3;
-    padding: 20px;
-    color: #fff;
-    box-shadow: 0px 0px 18px 0px rgb(0 0 0 / 10%);
+.title_line{
+    width: 2vw;
+    background-color: #F05454;
+    margin-right: 2vw;
+}
+.history-img{
+    width: 15vw;
+    border-radius: 30px;
+    background: url(../img/desktop/menu/pastux.svg) center center/cover no-repeat;
+}
+.legends{
+    display: block;
+    margin-left: 20px;
+    width: 80vw;
+}
+.legends h2{
+    font-size: xx-large;
+    font-weight: 700;
+}
+.legends span{
+    font-size: x-large;
+    font-weight: 500;
+}
+.legends p{
+    margin-top: 10px;
+}
+
+@media (max-width: 767px){
+    .history-section{
+        width: 90vw;
+        margin: 0 auto;
+    }
 }
