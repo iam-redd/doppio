@@ -489,6 +489,10 @@
         }
         .cards{
             flex-wrap: wrap;
+            justify-content:center;
+        }
+        .card{
+            margin:10px 10px;
         }
         .slider__offer{
             justify-content: center;
