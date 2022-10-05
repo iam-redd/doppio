@@ -572,7 +572,10 @@
         }
         .header li{
             margin-top:5px;
-        }        
+        }
+        .section-title{
+            font-size: 22px;
+        }
 }
     
     }
