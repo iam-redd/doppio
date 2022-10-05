@@ -218,7 +218,7 @@
         margin: 0 10px;
         font-style: normal;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: space-around;
         box-shadow: 0px 0px 18px 0px rgb(0 0 0 / 10%);
         transition: all 0.3s ease;
@@ -559,6 +559,13 @@
         }
         .slide{
             border-radius: none;
+        }
+        .catalogs{
+            justify-content: space-around;
+        }
+        .catalog{
+            width: 120px;
+            flex-direction: column-reverse;
         }
         
 }
