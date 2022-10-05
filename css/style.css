@@ -20,11 +20,10 @@
     html,
     body {
         height: 100%;
-        background:url(../img/desktop/slider/bckg.png);
+        background:url(../img/desktop/background/bckg.svg);
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
     }
     
     body {
@@ -68,7 +67,6 @@
         border-radius:20px;
         padding: 20px 20px 100px 20px;
         background: #f5f5f5;
-
     }
     
     .margin {
@@ -86,9 +84,12 @@
     .logo__text{
         display: flex;
         align-items:center;
+        
+    }
+    .logo__text h2{
         font-size: large;
+        font-weight: 700;
         font-family: 'Comfortaa', sans-serif;
-
     }
     .logo__text span{
         color:#F05454;
@@ -132,7 +133,7 @@
     
     .slider__offer {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
         margin-bottom: 50px;
@@ -142,12 +143,12 @@
         position: relative;
         display: flex;
         overflow: hidden;
-        width: 400px;
+        width: 50%;
         height: 300px;        
     }    
     .slide {
         position: absolute;
-        width: 400px;
+        width: 100%;
         height: 300px;
         border-radius: 30px 0 30px 0;
         transition: all 1.0s ease-in-out;
@@ -160,22 +161,22 @@
     .sort-1{
         width: 100%;
         height: 100%;
-        background: url(../img/desktop/slider/najib-kalil-ys0rBJK-k6Q-unsplash.jpg) center center/cover no-repeat;
+        background: url(../img/desktop/slider/1.svg) center center/cover no-repeat;
     }
     .sort-2{
         width: 100%;
         height: 100%;
-        background: url(../img/desktop/slider/ashkan-forouzani-QZTFDvO8Nh8-unsplash.jpg) center center/cover no-repeat;
+        background: url(../img/desktop/slider/2.svg) center center/cover no-repeat;
     }
     .sort-3{
         width: 100%;
         height: 100%;
-        background: url(../img/desktop/slider/kofe_kofejnik_kofejnia_126219_3840x2400.jpg) center center/cover no-repeat;
+        background: url(../img/desktop/slider/3.svg) center center/cover no-repeat;
     }
     .sort-4{
         width: 100%;
         height: 100%;
-        background: url(../img/desktop/slider/thom-holmes-HAOeV9vlAqo-unsplash.jpg) center center/cover no-repeat;
+        background: url(../img/desktop/slider/4.svg) center center/cover no-repeat;
     }        
     .offer__title {
         font-size: 35px;
@@ -496,12 +497,14 @@
         }
         .slider__offer{        
             padding: 20px;
+            width: 100%;
         }
         .offer__sub{
-            max-width: 49vw
+            max-width: 85vw
         }
         .slider__items{
             margin-top: 50px;
+            width: 95%;
         }
 
     }
@@ -511,17 +514,18 @@
             max-width: 750px;
         }
         .slider__text{
-            width:80vw;
-            display: contents;            
+            width: 100vw;                        
+        }
+        .offer__sub{
+            max-width: 100vw
         }
         .navigation{
         padding: 20px 20px;}
-        /*.slider__offer{
-            justify-content:center;
-            align-items:center;
-        }*/
         .catalog{
             margin: 10px;
+        }
+        .slider__items{
+            width: 90vw;
         }        
     }
     
@@ -557,8 +561,11 @@
             justify-content: center;
             padding: 0;
         }
+        .slider__items{
+            width: 90%;
+        }
         .slide{
-            border-radius: 0;
+            border-radius: 10px;
         }
         .catalogs{
             justify-content: space-around;
@@ -577,8 +584,6 @@
             font-size: 22px;
         }
 }
-    
-    }
     @media (max-width: 320px ){
         .slider__text{
             width:80vw; 
