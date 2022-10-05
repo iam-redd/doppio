@@ -567,7 +567,12 @@
             width: 120px;
             flex-direction: column-reverse;
         }
-        
+        .header ul{
+            display: block;
+        }
+        .header li{
+            margin-top:5px;
+        }        
 }
     
     }
