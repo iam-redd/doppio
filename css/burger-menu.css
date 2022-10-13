@@ -1,0 +1,135 @@
+#menu {
+    z-index: 2;
+    display: none;
+  }
+  
+  #menu-bar {
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .bar {
+    height: 5px;
+    width: 100%;
+    background-color: #F05454;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  #bar1 {
+    transform: translateY(-4px);
+  }
+  
+  #bar3 {
+    transform: translateY(4px);
+  }
+  
+  .nav {
+    transition: 0.3s ease;
+    display: none;
+    margin-right: 5vw ;
+  }
+  
+  
+  .nav li {
+    list-style: none;
+    padding: 12px 0;
+  }
+  
+  .nav li a {
+    color: #f5f5f5;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .nav li a:hover {
+    font-weight: bold;
+  }
+  
+  .menu-bg, #menu {
+    top: 7vh;
+    position: absolute;
+    right: 5vw;
+    left: 75vw;
+  }
+  
+  .menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 9vh 10vw;
+    background: radial-gradient(circle, #F05454, #F05454);
+    border-radius: 0 0 0% 50%;
+    transition: 0.3s ease;
+  }
+  
+  .change {
+    display: block;
+  }
+  
+  .change .bar {
+    background-color: #f5f5f5;
+  }
+  
+  .change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+  }
+  
+  .change #bar2 {
+    opacity: 0;
+  }
+  
+  .change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+  }
+  
+  .change-bg {
+    width: 50vw;
+    height: 25vh;
+    transform: translate(-40%,-40%);
+    top: 5vh;
+  }
+
+  @media (max-width: 767px){
+    #menu{
+        
+    }
+  }
+
+  @media (max-width: 415px){
+    .menu-bg, #menu {
+        top: 10vh;
+        right: 5vw;
+        left: 75vw;
+    }
+    .change-bg {
+        top: 110px;
+        width: 50vw;
+        height: 40vh;
+        transform: translate(-45%,-40%);
+    }
+  }
+
+  @media (max-width: 379px){
+    .menu-bg, #menu {
+        top: 13vh;
+        right: 5vw;
+        left: 75vw;
+    }
+      .change-bg {
+        top: 110px;
+        width: 50vw;
+        height: 45vh;
+        transform: translate(-45%,-40%);
+    }
+    #menu-bar{
+        width: 10vw;
+        height: 10vh;
+    }
+    #nav{
+        margin-top: -50%;
+    }
+}

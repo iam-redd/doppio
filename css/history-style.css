@@ -48,4 +48,8 @@
     .legend{
         flex-wrap: wrap;
     }
+    .legend-img{
+        width: 100vw;
+        margin-top: 10px;
+    }
 }

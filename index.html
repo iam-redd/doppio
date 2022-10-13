@@ -10,6 +10,7 @@
 
     <!--//Cтили в СSS-->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/burger-menu.css">
 
 
     <!--//Шрифты-->
@@ -32,13 +33,35 @@
                     <span>BARISTA</span></h1>
                 </a>
                 <!--//Меню сайта-->
-                <ul class="navigation__list">
+                <ul class="navigation__list" id="navigation-d">
                     <li><a href="#section__two">Новости сайта</a></li>
                     <li><a href="../pages/blog.html">Блог</a></li>
                     <li><a href="#" id="contacts">Контакты</a></li>
                     <li><a href="../about.html">О нас</a></li>
                 </ul>
+
+                <div id="menu">
+                    <div id="menu-bar" onclick="menuOnClick()">
+                      <div id="bar1" class="bar"></div>
+                      <div id="bar2" class="bar"></div>
+                      <div id="bar3" class="bar"></div>
+                    </div>
+                    <nav class="nav" id="nav">
+                      <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                      </ul>
+                    </nav> 
+                  </div>
+                  
+                  
+                  <div class="menu-bg" id="menu-bg"></div>
+
             </nav>
+
+
             <div class="fade-slider">
                 <!--  Заголовок и вкраце о целях сайта.  -->
                 <div class="slider__offer">
@@ -322,8 +345,8 @@
 
 
     </section>
-    <script src="./js/main.js">
-    </script>    
+    <script src="./js/main.js"></script>
+    <script src="./js/burger-menu.js"></script>   
 </div>
 <footer id="footer" class="footer">
     <div class="footer-credits">
