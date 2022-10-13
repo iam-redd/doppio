@@ -1,53 +1,51 @@
-.history-section {
-    width: 100%;
-    height: auto;
+.title{
     display: flex;
+    margin-top: 50px;
 }
-
-.history-container {
-    display: flex;
-    margin-top: 5vh;
-}
-
-.history-text {
-    margin-left: 20px;
-    text-align: center;
-    width: 100%;
-}
-.classes {
-    height: 100px;
-}
-
-.title_line{
-    width: 2vw;
+.title-line{
+    width: 1vw;
     background-color: #F05454;
     margin-right: 2vw;
 }
-.history-img{
-    width: 15vw;
-    border-radius: 30px;
-    background: url(../img/desktop/menu/pastux.svg) center center/cover no-repeat;
-}
 .legends{
     display: block;
-    margin-left: 20px;
-    width: 80vw;
+    margin-top: 50px;
 }
 .legends h2{
     font-size: xx-large;
     font-weight: 700;
-}
-.legends span{
-    font-size: x-large;
-    font-weight: 500;
+    margin-top: 20px;
 }
 .legends p{
-    margin-top: 10px;
+    font-family: "Roboto Mono", sans-serif;
 }
+.legend{
+    display: flex;
+    align-items:center;
+}
+.text{
+    width: 70vw;
+    margin-left: 10px;
+}
+.legend-img{
+    width: 30vw;
+    height: 30vh;
 
+}
+.img-1{
+    background: url(../img/desktop/cards/nathan-dumlao-2z3MOB3kfJU-unsplash.jpg) center center/cover no-repeat;
+}
+.img-2{
+    background: url(../img/desktop/cards/nathan-dumlao-2z3MOB3kfJU-unsplash.jpg) center center/cover no-repeat;
+}
+.img-3{
+    background: url(../img/desktop/cards/nathan-dumlao-2z3MOB3kfJU-unsplash.jpg) center center/cover no-repeat;
+}
 @media (max-width: 767px){
-    .history-section{
-        width: 90vw;
-        margin: 0 auto;
+    .text{
+        width: 100vw;
+    }
+    .legend{
+        flex-wrap: wrap;
     }
 }
